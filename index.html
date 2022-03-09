@@ -1,17 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
 
-		<title>reveal.js</title>
-
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
-
+		<title>Cloudera Basics</title>
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme" />
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+		<style>
+			img {
+				/* height: 60vh;
+				width: 80vh; */
+				/* width: 100%;
+				height: 100%; */
+			}
+			.img-80-60 {
+				height: 60vh;
+				width: 80vh;
+				/* width: 100%;
+				height: 100%; */
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -26,7 +41,9 @@
 							</tr>
 							<tr>
 								<td>History</td>
-								<td>Brief History of Data Management and Hadoop</td>
+								<td>
+									Brief History of Data Management and Hadoop
+								</td>
 							</tr>
 							<tr>
 								<td>Hadoop</td>
@@ -39,8 +56,35 @@
 						</tbody>
 					</table>
 				</section>
+				<section>
+					<h3>One Server</h3>
+					<img data-src="images/many_clients_to_one_server.png" />
+				</section>
+				<section>
+					<h3>Data Life Cycle</h3>
+					<img data-src="images/data_life_cycle.png" />
+				</section>
+				<section>
+					<h3>Map Reduce</h3>
+					<img data-src="images/map_reduce_example.png" />
+				</section>
 
+				<section>
+					<h3>Cloudera Ecosystem</h3>
+					<img data-src="images/cloudera_ecosystem.png" />
+				</section>
 
+				<section>
+					<h3>Rule of Three</h3>
+					<img
+						class="img-80-60"
+						data-src="images/rule_of_three_diagram.png"
+					/>
+				</section>
+				<section>
+					<h3>Cloudera Invented Components</h3>
+					<img data-src="images/cloudera_invented_components.png" />
+				</section>
 				<section>Slide 1</section>
 				<section>Slide 2</section>
 			</div>
@@ -58,7 +102,7 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
 			});
 		</script>
 	</body>
