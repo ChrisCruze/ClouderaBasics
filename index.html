@@ -32,6 +32,134 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
+					<section>
+						<h3>Cloudera Manager Architecture</h3>
+						<img
+							data-src="images/cloudera_manager_architecture.png"
+						/>
+						<aside class="notes">
+							What does it mean to work in a server agent model?
+						</aside>
+					</section>
+
+					<section>
+						<h2>Cloudera Services</h2>
+						<ul>
+							<li>Software Distribution Management</li>
+							<li>Process Management</li>
+							<li>Host Management</li>
+							<li>Resource Management</li>
+							<li>User Management</li>
+							<li>Security Management</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>
+									Software Distribution - Upgrading Packages
+									and Parcels
+								</li>
+								<li>
+									Process Management - starting stopping
+									processes called supervisord
+								</li>
+								<li>
+									Host Management - hosts can be added to
+									cluster or removed
+								</li>
+								<li>Resource Management</li>
+								<li>User Management</li>
+								<li>Security Management</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h3>Cloudera Ecosystem</h3>
+						<img data-src="images/cloudera_ecosystem.png" />
+						<aside class="notes"></aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Data Life Cycle CDP</h2>
+						<p></p>
+						<img data-src="images/data_life_cycle_cdp.png" />
+					</section>
+
+					<section>
+						<h2>Data Life Cycle</h2>
+						<p></p>
+						<img data-src="images/data_life_cycle_basic.png" />
+					</section>
+					<section>
+						<h2>Data Life Cycle</h2>
+						<p></p>
+						<img data-src="images/data_life_cycle_mapped.png" />
+					</section>
+
+					<section>
+						<h3>Data Life Cycle</h3>
+						<img data-src="images/data_life_cycle.png" />
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>CDP Private Cloud</h3>
+						<img data-src="images/cdp_private_cloud.png" />
+					</section>
+					<section>
+						<h3>HDP + Data Hub</h3>
+						<img data-src="images/hdp_plus_data_hub_merge.png" />
+					</section>
+
+					<section>
+						<h2>CDP Private Cloud Major Updates</h2>
+						<ul>
+							<li>Spark 3.0 now available</li>
+							<li>Yarn Queue Prioritization & New Queue UI</li>
+							<li>Impala Improved Metadata & Parquet native</li>
+							<li>Tez replaces Hive as execution engine</li>
+							<li>Oozie</li>
+							<li>
+								HBase & Phoenix - serial replication now
+								available
+							</li>
+							<li>
+								Flume replaced with Nifi , Pig replaced with
+								Hive or Spark , Sqoop insteead of Sqoop2
+							</li>
+							<li>Ranger replaces Sentry</li>
+							<li>Atlas replaces Navigator</li>
+						</ul>
+						<aside class="notes">
+							Do these things matter to you? Which one of these is
+							a big deal? Why those tools replaced?
+						</aside>
+					</section>
+					<section>
+						<h2>Atlas & Ranger</h2>
+						<ul>
+							<li>Lineage</li>
+						</ul>
+						<aside class="notes">
+							Do these things matter to you? Which one of these is
+							a big deal? Why those tools replaced?
+						</aside>
+					</section>
+					<section>
+						<h2>CDP Major Updates</h2>
+						<p>Sentry replaced Ranger</p>
+						<p>Navigator replaced Atlas</p>
+						<p>Flume replaced Cloudera Flow Management</p>
+					</section>
+					<section>
+						<h2>CDP Steps to Upgrade</h2>
+						<p>Upgrade Cloudera Manager</p>
+						<p>Upgrade the Cluster</p>
+					</section>
+				</section>
+
+				<section>
 					<h2>Agenda</h2>
 					<table>
 						<tbody>
@@ -82,7 +210,6 @@
 						availability&rdquo;
 					</blockquote>
 				</section>
-
 				<section id="fragments">
 					<h2>Cloudera the Company</h2>
 					<p>75-80 percent of time is towards open source</p>
@@ -103,21 +230,7 @@
 					<p>Data Engineers</p>
 					<p>Admins</p>
 				</section>
-				<section>
-					<h2>CDP Major Updates</h2>
-					<p>Sentry replaced Ranger</p>
-					<p>Navigator replaced Atlas</p>
-					<p>Flume replaced Cloudera Flow Management</p>
-				</section>
-				<section>
-					<h2>CDP Steps to Upgrade</h2>
-					<p>Upgrade Cloudera Manager</p>
-					<p>Upgrade the Cluster</p>
-				</section>
-				<section>
-					<h2>Public Cloud vs. Private Cloude</h2>
-					<p></p>
-				</section>
+
 				<section>
 					<h2>Return to Cloud Computing</h2>
 					<p></p>
@@ -132,18 +245,10 @@
 					<h3>One Server</h3>
 					<img data-src="images/many_clients_to_one_server.png" />
 				</section>
-				<section>
-					<h3>Data Life Cycle</h3>
-					<img data-src="images/data_life_cycle.png" />
-				</section>
+
 				<section>
 					<h3>Map Reduce</h3>
 					<img data-src="images/map_reduce_example.png" />
-				</section>
-
-				<section>
-					<h3>Cloudera Ecosystem</h3>
-					<img data-src="images/cloudera_ecosystem.png" />
 				</section>
 
 				<section>
